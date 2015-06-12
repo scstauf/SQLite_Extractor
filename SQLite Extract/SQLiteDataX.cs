@@ -89,7 +89,7 @@ namespace SQLite_Extract
 
         private void SQLiteDataX_Load(object sender, EventArgs e)
         {
-            cboCommand.SelectedIndex = 0;
+            cboCommand.SelectedIndex = 0; // {0: standard query, 1: data manipulation}
         }
     }
 }
