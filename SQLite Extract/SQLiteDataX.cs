@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -59,14 +59,14 @@ namespace SQLite_Extract
                     {
                         cmd.CommandText = query;
 
-                        if (cboCommand.SelectedIndex == 0)
+                        if (cboCommand.SelectedIndex == 0) // query
                         {
                             using (var adapter = new SQLiteDataAdapter(cmd))
                             {
                                 adapter.Fill(resultset);
                             }
                         }
-                        else
+                        else // nonquery
                             rowsAffected = cmd.ExecuteNonQuery();
                     }
 
