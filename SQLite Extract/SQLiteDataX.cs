@@ -27,9 +27,7 @@ namespace SQLite_Extract
                 ofd.Multiselect = false;
                 ofd.Title = "Find the sqlite db";
                 if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {
                     txtDB.Text = ofd.FileName;
-                }
             }
         }
 
